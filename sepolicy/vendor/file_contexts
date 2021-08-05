@@ -63,9 +63,8 @@
 # WiFi
 /vendor/bin/nv_mac                                                   u:object_r:vendor_wcnss_service_exec:s0
 
-# Xiaomi thermal daemon
-/vendor/bin/mi_thermald                                              u:object_r:mi_thermald_exec:s0
-/data/vendor/thermal(/.*)?                                           u:object_r:thermal_data_file:s0
+# Thermal
+/vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.pixel                     u:object_r:hal_thermal_default_exec:s0
 
 # Elliptic
 /dev/elliptic[0-9]                                                   u:object_r:ultrasound_device:s0
