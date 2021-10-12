@@ -44,12 +44,12 @@ on init
     chmod 0660 /dev/akm09970
 
 on init && property:ro.boot.hwc=GLOBAL
-    setprop ro.boot.product.hardware.sku raphael
+    setprop ro.boot.product.hardware.sku phoenix
 
 on init && property:ro.boot.hwc=CN
-    setprop ro.boot.product.hardware.sku raphael
+    setprop ro.boot.product.hardware.sku phoenix
 
-on boot && property:ro.boot.product.hardware.sku=raphael
+on boot && property:ro.boot.product.hardware.sku=phoenix
     enable qti_esepowermanager_service_1_1
     enable secureelement-hal_1_2
     enable vendor.nfc_hal_service
