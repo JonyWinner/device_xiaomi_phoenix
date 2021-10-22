@@ -225,6 +225,14 @@ on property:vold.decrypt=trigger_restart_framework
 
 service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
    class main
+
+service vendor.thermal-engine /vendor/bin/thermal-engine -c /vendor/etc/thermal-engine-msmnile-normal_mode.conf
+    class main
+    user root
+    group root
+
+service vendor.lowi /vendor/bin/sscrpcd
+   class core
    user system
    group system wifi inet sdcard_rw media_rw diag
    oneshot
