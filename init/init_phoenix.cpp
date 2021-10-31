@@ -59,6 +59,16 @@ constexpr const char *DEVICES[] = {
     "POCO X2",
 };
 
+constexpr const char *BUILD_DESCRIPTION[] = {
+    "raven-user 12 SD1A.210817.019.C2 7738411 release-keys",
+    "raven-user 12 SD1A.210817.019.C2 7738411 release-keys",
+};
+
+constexpr const char *BUILD_FINGERPRINT[] = {
+    "google/raven/raven:12/SD1A.210817.019.C2/7738411:user/release-keys",
+    "google/raven/raven:12/SD1A.210817.019.C2/7738411:user/release-keys",
+};
+
 constexpr const char *CLIENT_ID[] = {
     "android-xiaomi",
     "android-xiaomi-rev1",
