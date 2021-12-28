@@ -429,9 +429,13 @@ PRODUCT_PACKAGES += \
     thermal_symlinks
 
 #Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-vendorcompat \
-    libprotobuf-cpp-lite-vendorcompat
+PRODUCT_PACKAGES += \                                                                       libprotobuf-cpp-full-vendorcompat \                                                     libprotobuf-cpp-lite-vendorcompat
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.thermal.config=thermal_info_config.json
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
+    $(LOCAL_PATH)/configs/thermal-engine-msmnile-normal_mode.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-msmnile-normal_mode.conf
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
