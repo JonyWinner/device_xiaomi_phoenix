@@ -369,6 +369,7 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayPhoenix \
     TelephonyOverlayPhoenix \
     TetheringConfigOverlayPhoenix \
+    xdroid-overlay \
     WifiOverlayPhoenix
 
 # Perf
