@@ -17,7 +17,6 @@ PRODUCT_MODEL := POCO X2
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Inherit some common xdroidsp stuff
-$(call inherit-product, vendor/xdroid/config/common.mk)
 XDROID_BOOT := 1080
 XDROID_MAINTAINER := Jony W.
 TARGET_SUPPORTS_QUICK_TAP := true
