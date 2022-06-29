@@ -429,7 +429,10 @@ PRODUCT_PACKAGES += \
     thermal_symlinks
 
 #Protobuf
-PRODUCT_PACKAGES += \                                                                       libprotobuf-cpp-full-vendorcompat \                                                     libprotobuf-cpp-lite-vendorcompat
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
+                                                                      libprotobuf-cpp-full-vendorcompat \                                                     libprotobuf-cpp-lite-vendorcompat
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.thermal.config=thermal_info_config.json
 
